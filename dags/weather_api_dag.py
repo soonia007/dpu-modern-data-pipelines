@@ -40,6 +40,18 @@ def _validate_data():
 
     assert data.get("main") is not None
 
+def _validate_temperature_range ():
+    with open("/opt/airflow/dags/data.json", "r") as f:
+        data = json.load(f)
+    
+    assert data.get("main").get("temp") >= 30 and data.get("main").get("temp") <= 45
+    assert data.get("main").get("temp") >= 30 and data.get("main").get("temp") >= 30
+
+
+
+
+
+
 def _create_weather_table():
     pg_hook = PostgresHook(
         postgres_conn_id="weather_postgres_conn",
