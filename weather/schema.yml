@@ -1,0 +1,11 @@
+version: 2
+models :
+  - name: my_firstl_dbt_mobdel
+    descriotion: Temperature that is greater than 35 celcius
+    columns:
+    - name : id
+      descroption: Datastamp
+    - name : temp
+      descroption: Temperature in celcius
+    - name : feels_like
+      descroption: Temperature we feel in celcius
