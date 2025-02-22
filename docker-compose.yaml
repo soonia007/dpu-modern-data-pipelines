@@ -298,9 +298,14 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     ports:
-      - "8090:8080"  # Define the port mapping here
+      - 5432:5432
 
-  # Other services go here...
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080
+
 
 
 

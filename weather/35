@@ -1,0 +1,5 @@
+[0m04:19:31  Running with dbt=1.9.2
+[0m04:19:31  Registered adapter: postgres=1.9.0
+[0m04:19:31  Found 3 models, 4 data tests, 433 macros
+[0m04:19:31  The selection criterion 'temp_greater_than' does not match any enabled nodes
+[0m04:19:31  Nothing to do. Try checking your model configs and model specification args
